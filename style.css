@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap')
+
+
+/* -----------------common css ------------*/
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+
+
+/* ---------------common css end -----------*/
+/* -----------------headding css ------------*/
+
+.container_header{
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+  
+}
+
+.container_header img{
+    width: 48px;
+    height: 56px;
+    margin-top: 30px;
+    padding-right: 13px;
+}
+.container_header h3{
+    font-size: 36px;
+    font-weight: 900;
+    font-family: "Mulish", sans-serif;
+    color: #131318;
+
+}
+.he{
+    color: #FF5400;
+}
+.container_header ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 44px;
+   padding-left: 500px;
+   margin-top: 53px;
+   
+}
+.container_header ul li a{
+    font-size: 18px;
+    font-weight: 500;
+    font-family:"Mulish", sans-serif ;
+    color: #424247;
+}
+
+/* ---------------hadding css end -----------*/
+/* -----------------banner css ------------*/
+.container_banner{
+    max-width: 1320px;
+    margin:  0 auto;
+    background: url(Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    /* text-align: center; */
+    margin-top: 48px;
+    width: 1170px;
+
+}
+.container_banner h1{
+    font-size: 64px;
+    font-weight: 900;
+    font-family: "Mulish", sans-serif;
+    color: #ffff;
+    padding-top: 106px;
+    line-height: 0;
+}
+.container_banner p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Mulish", sans-serif;
+    color: #ffff;
+    line-height: 25px;
+    padding-top: 24px;
+    width: 676px;
+    margin-bottom: 48px;
+}
+.container_banner .input_g{
+    display: flex;
+    /* width: 174px; */
+    height: 52px;
+    border-radius: 8px;
+    padding-bottom: 106px;
+    color: #131318;
+    gap: 24px;
+    text-align: center;
+}.container_banner .input_g .btn{
+    width: 175px;
+    height: 52px;
+    background: #FF5400;
+    text-align: center;
+    justify-content: center;
+    border-radius: 8px;
+
+}
+
+/* ---------------banner css end -----------*/
+/* -----------------tours css ------------*/
+.container_tour{
+    max-width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 100px;
+}
+.container_tour .leka{
+    width: 577px;
+    margin-right: 53px;
+}
+.container_tour .leka h4{
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Mulish", sans-serif;
+    color: #131318;
+    line-height: 0;
+   
+}
+.container_tour .leka p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Mulish", sans-serif;
+    color: #131318ad;
+}
+button{
+    margin-top: 32px;
+    width: 174px;
+    height: 52px;
+    font-size: 20px;
+    font-family:"Mulish", sans-serif ;
+    font-weight: 900;
+    color:#ffff ;
+    background: #FF5400;
+   border-radius: 10px;
+}
+.container_tour .pic{
+    margin-left: 125px;
+}
+
+/* ---------------tours css end -----------*/
+/* -----------------Destination css ------------*/
+.container_destination{
+    max-width: 1320px;
+    margin: 0 auto;
+}
+.container_destination .slaid_text{
+    /* text-align: center; */
+    margin-top: 100px;
+}
+.container_destination .slaid_text h4{
+    font-size:40px ;
+    font-weight: 900;
+    font-family:"Mulish", sans-serif ;
+    color:#131318 ;
+    line-height: 0;
+    text-align: center;
+}
+.container_destination .slaid_text p{
+    font-size: 16px;
+    font-weight:400 ;
+    font-family: "Mulish", sans-serif;
+    color:#131318 70% ;
+    padding-bottom: 48px;
+    width: 643px;
+    margin-left: 354px;
+    padding-bottom: 24px;
+}
+.container_destination .slaid1 img  {
+    width: 573px;
+    margin-right: 65px;
+    padding-bottom: 24px;
+}
+.container_destination .slaid2 img{
+    margin-right: 45px;
+    padding-bottom: 24px;
+}
+.container_destination .slaid3 img{
+    margin-right: 65px;
+    padding-bottom: 24px;
+}
+
+/* ---------------Destination css end -----------*/
+/* -----------------Choose css ------------*/
+.container_choose{
+    width: 1320px;
+    margin: 0 auto;
+    margin-top: 100px;
+
+}
+.container_choose .what1 h4{
+    font-size:40px ;
+    font-weight: 900;
+    font-family:"Mulish", sans-serif ;
+    color:#131318 ;
+    line-height: 0;
+    text-align: center;
+}
+.container_choose .what1 p{
+    font-size: 16px;
+    font-weight:400 ;
+    font-family: "Mulish", sans-serif;
+    color:#131318aa  ;
+    width: 643px;
+    padding-left: 350px;
+    text-align: center;
+   
+}
+.container_choose .what2{
+    display: flex;
+    padding-bottom: 25px;
+}
+.container_choose .what2 .what3{
+    width: 573px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    margin-right: 25px;
+
+}
+.container_choose .what2 .what3 img{
+    margin: 32px 0px 32px 32px;
+}
+.container_choose .what2 .what3 h5{
+    font-size:24px ;
+    font-weight: 900;
+    font-family:"Mulish", sans-serif ;
+    color:#131318 ;
+    line-height: 0;
+    margin: 0 0;
+    padding-left: 32px;
+}
+.container_choose .what2 .what3 p{
+    font-size: 16px;
+    font-weight:400 ;
+    font-family: "Mulish", sans-serif;
+    color:#131318aa  ;
+    padding-top: 16px;
+    padding-left: 32px;
+    width: 486px;
+}
+.container_choose .what2 .what5{
+    width: 573px;
+    border-radius: 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+
+}
+.container_choose .what2 .what5 img{
+    margin: 32px 0px 32px 32px;
+}
+.container_choose .what2 .what5 h5{
+    font-size:24px ;
+    font-weight: 900;
+    font-family:"Mulish", sans-serif ;
+    color:#131318 ;
+    line-height: 0;
+    margin: 0 0;
+    padding-left: 32px;
+}
+.container_choose .what2 .what5 p{
+    font-size: 16px;
+    font-weight:400 ;
+    font-family: "Mulish", sans-serif;
+    color:#131318aa  ;
+    padding-top: 16px;
+    padding-left: 32px;
+    width: 486px;
+}
+.container_choose .what4{
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05); 
+    width: 573px;
+    margin-left: 320px;
+}
+.container_choose .what4 img{
+    margin: 32px 0px 32px 32px;
+}
+.container_choose .what4 h5{
+    font-size:24px ;
+    font-weight: 900;
+    font-family:"Mulish", sans-serif ;
+    color:#131318 ;
+    line-height: 0;
+    margin: 0 0;
+    padding-left: 32px;
+}
+.container_choose .what4 p{
+    font-size: 16px;
+    font-weight:400 ;
+    font-family: "Mulish", sans-serif;
+    color:#131318aa  ;
+    padding-top: 16px;
+    padding-left: 32px;
+    width: 486px;
+}
+
+
+
+
+/* ---------------Choose css end -----------*/
+/* -----------------common css ------------*/
+
+
+
+/* ---------------common css end -----------*/
+/* -----------------common css ------------*/
+
+
+
+/* ---------------common css end -----------*/
+/* -----------------common css ------------*/
+
+
+
+/* ---------------common css end -----------*/
+/* -----------------common css ------------*/
+
+
+
+/* ---------------common css end -----------*/
+
