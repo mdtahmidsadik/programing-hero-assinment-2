@@ -1,19 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap')
-
-
-/* -----------------common css ------------*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* ------------------common css--------------- */
 .container{
-    max-width: 1320px;
-    margin: 0 auto;
+max-width: 1170px;
+margin: 0 auto;
 }
 
-
-
-/* ---------------common css end -----------*/
+/* -------------------common css end---------- */
 /* -----------------headding css ------------*/
-
 .container_header{
-    max-width: 1320px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
   
@@ -37,16 +32,16 @@
 }
 .container_header ul{
     display: flex;
-    text-decoration: none;
     list-style: none;
     gap: 44px;
-   padding-left: 500px;
-   margin-top: 53px;
-   
+    padding-left:380px;
+    margin-top: 53px;
+    
 }
 .container_header ul li a{
     font-size: 18px;
     font-weight: 500;
+    text-decoration: none;
     font-family:"Mulish", sans-serif ;
     color: #424247;
 }
@@ -54,56 +49,84 @@
 /* ---------------hadding css end -----------*/
 /* -----------------banner css ------------*/
 .container_banner{
-    max-width: 1320px;
-    margin:  0 auto;
+    max-width: 100%;
     background: url(Images/Group\ 13\ \(1\)\ \(1\).png);
     background-repeat: no-repeat;
-    /* text-align: center; */
-    margin-top: 48px;
-    width: 1170px;
+    text-align: center;
+
+    border-radius: 16px;
+}
+.banner_bg{
+    max-width: 100%;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 106px 0;
+
+
 
 }
-.container_banner h1{
+.banner_text{
+    max-width: 676px;
+    text-align: center;
+}
+.banner_text h1{
     font-size: 64px;
     font-weight: 900;
     font-family: "Mulish", sans-serif;
     color: #ffff;
-    padding-top: 106px;
-    line-height: 0;
+    line-height: 20px;  
 }
-.container_banner p{
+.banner_text p{
     font-size: 16px;
     font-weight: 400;
     font-family: "Mulish", sans-serif;
     color: #ffff;
     line-height: 25px;
-    padding-top: 24px;
-    width: 676px;
-    margin-bottom: 48px;
 }
-.container_banner .input_g{
+.banner_form{
+    max-width: 800px;
+    background: #ffffff75;
+    padding: 20px;
+    border-radius: 8px;
+    
+
+}
+.banner_form form{
     display: flex;
-    /* width: 174px; */
-    height: 52px;
-    border-radius: 8px;
-    padding-bottom: 106px;
-    color: #131318;
-    gap: 24px;
-    text-align: center;
-}.container_banner .input_g .btn{
-    width: 175px;
-    height: 52px;
-    background: #FF5400;
-    text-align: center;
     justify-content: center;
-    border-radius: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
 
 }
+.banner_form form input ,
+.banner_form form select{
+    width: 174px;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
 
+}
+button{
+    width: 174px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Mulish", sans-serif;
+    background: #FF5400;
+    
+}
 /* ---------------banner css end -----------*/
 /* -----------------tours css ------------*/
 .container_tour{
-    max-width: 1320px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
     margin-top: 100px;
@@ -126,7 +149,7 @@
     font-family: "Mulish", sans-serif;
     color: #131318ad;
 }
-button{
+.container_tour .leka button{
     margin-top: 32px;
     width: 174px;
     height: 52px;
@@ -135,7 +158,7 @@ button{
     font-weight: 900;
     color:#ffff ;
     background: #FF5400;
-   border-radius: 10px;
+    border-radius: 10px;
 }
 .container_tour .pic{
     margin-left: 125px;
@@ -144,7 +167,7 @@ button{
 /* ---------------tours css end -----------*/
 /* -----------------Destination css ------------*/
 .container_destination{
-    max-width: 1320px;
+    max-width: 100%;
     margin: 0 auto;
 }
 .container_destination .slaid_text{
@@ -163,30 +186,96 @@ button{
     font-size: 16px;
     font-weight:400 ;
     font-family: "Mulish", sans-serif;
-    color:#131318 70% ;
-    padding-bottom: 48px;
+    color: #131318aa ;
+    
     width: 643px;
     margin-left: 354px;
     padding-bottom: 24px;
 }
-.container_destination .slaid1 img  {
-    width: 573px;
-    margin-right: 65px;
-    padding-bottom: 24px;
+.grid_item_container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
+
 }
-.container_destination .slaid2 img{
-    margin-right: 45px;
-    padding-bottom: 24px;
+.grid_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    min-height: 300px;
 }
-.container_destination .slaid3 img{
-    margin-right: 65px;
-    padding-bottom: 24px;
+.grid_item h3{
+    font-size: 28px;
+    font-weight: 900;
+    font-family: "Mulish", sans-serif;
+    color: #ffff;
 }
+.item1{
+    background: url(Images/Rectangle\ 5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / span 6;
+
+}
+.item2{
+    background: url(Images/Rectangle\ 8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 7 / span 6;
+
+}
+.item3{
+    background: url(Images/Rectangle\ 6.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / span 4;
+
+}
+.item4{
+    background: url(Images/Rectangle\ 7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 5 / span 5;
+
+}
+.item5{
+    background: url(Images/Rectangle\ 9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 10 / span 3;
+
+}
+.item6{
+    background: url(Images/Rectangle\ 11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / span 5;
+
+}
+.item7{
+    background: url(Images/Rectangle\ 10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-column: 6 / span 7;
+
+}
+
+   
+
 
 /* ---------------Destination css end -----------*/
 /* -----------------Choose css ------------*/
 .container_choose{
-    width: 1320px;
+   max-width: 100%;
     margin: 0 auto;
     margin-top: 100px;
 
@@ -205,7 +294,7 @@ button{
     font-family: "Mulish", sans-serif;
     color:#131318aa  ;
     width: 643px;
-    padding-left: 350px;
+    padding-left: 250px;
     text-align: center;
    
 }
@@ -277,6 +366,7 @@ button{
     background: rgba(233, 68, 68, 0.05); 
     width: 573px;
     margin-left: 320px;
+    margin-bottom: 100px;
 }
 .container_choose .what4 img{
     margin: 32px 0px 32px 32px;
@@ -298,30 +388,285 @@ button{
     padding-top: 16px;
     padding-left: 32px;
     width: 486px;
+   
+}
+/* ---------------Choose css end -----------*/
+/* -----------------Discounts css ------------*/
+.container_discount{
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+.container_discount .taka1{
+    
+}
+.container_discount .taka1 h3{
+    font-size:40px ;
+    font-weight: 900;
+    font-family:"Mulish", sans-serif ;
+    color:#131318 ;
+    text-align: center;
+}
+
+
+.container_discount .taka1 p{
+    font-size: 16px;
+    font-weight:400 ;
+    font-family: "Mulish", sans-serif;
+    color:#131318aa  ;
+    padding-left: 345px;
+    text-align: center;
+    width: 643px;
+}
+.discount_img{
+    background: url(Images/Group\ 39.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    
+    padding: 52px;
+}
+.container_discount .taka2{
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    
+    background: rgba(255, 255, 255, 0.80);
+    
+    backdrop-filter: blur(2.5px);
+    width: 580px;
+    padding: 52px  ;
+   
+
+}
+.container_discount .taka2 .pa{
+   display: flex;
+   gap: 24px;
+}
+.container_discount .taka2 .pa p{
+    font-size: 16px;
+    font-weight:400 ;
+    font-family: "Mulish", sans-serif;
+    color:#131318aa  ;
+}
+
+.container_discount .taka2 .pa i{
+    color: #FF5400;
+}
+.container_discount .taka2 h4{
+    font-size:24px ;
+    font-weight: 900;
+    font-family:"Mulish", sans-serif ;
+    color:#131318 ;
+    
+}
+.container_discount .taka2 p{
+    font-size: 16px;
+    font-weight:400 ;
+    font-family: "Mulish", sans-serif;
+    color:#131318aa  ;
+}
+.container_discount .taka2 h6 {
+    font-size:20px ;
+    font-weight: 900;
+    font-family:"Mulish", sans-serif ;
+    color:#FF5400 ;
+    
+}
+
+.container_discount .hobe{
+    text-align: center;
+    width: 210px;
+    margin-left: 500px;
+    margin-top: 0px;
 }
 
 
 
 
-/* ---------------Choose css end -----------*/
-/* -----------------common css ------------*/
+
+/* ---------------Discounts css end -----------*/
+/* -----------------Place css ------------*/
+.container_place{
+    max-width:  100%;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 100px;
+}
+.container_place .div1{
+    width: 532px;
+}
+.container_place .div1 h2{
+    font-size:40px ;
+    font-weight: 900;
+    font-family:"Mulish", sans-serif ;
+    color:#131318 ;
+}
+.container_place .div1 p{
+    font-size: 16px;
+    font-weight:400 ;
+    font-family: "Mulish", sans-serif;
+    color:#131318aa  ;
+}
+.container_place .div1 ul li{
+    font-size:16px ;
+    font-weight: 600;
+    font-family:"Mulish", sans-serif ;
+    color:#131318aa ;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+.container_place .div2{
+    background: url(Images/Group\ 40089.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 610px;
+}
+.container_place .div2 h5{
+    font-size:24px ;
+    font-weight: 800;
+    font-family:"Mulish", sans-serif ;
+    color:#131318 ;
+    width: 276px;
+    margin-top: 25%;
+    margin-left: 25%;
+}
 
 
 
-/* ---------------common css end -----------*/
-/* -----------------common css ------------*/
+/* ---------------Place css end -----------*/
+/* -----------------Newsletter css ------------*/
+.container_newsletter{
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+   
+
+}
+.container_newsletter .news{
+    width: 474px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    padding: 40px;
+    margin-right: 80px;
+}
+.container_newsletter .news h4{
+    font-size:24px ;
+    font-weight: 900;
+    font-family:"Mulish", sans-serif ;
+    color:#131318 ;
+}
+.container_newsletter .news p{
+    font-size: 16px;
+    font-weight:400 ;
+    font-family: "Mulish", sans-serif;
+    color:#131318aa  ;
+}
+.container_newsletter .news .type{
+    width: 393px;
+    height: 52px;
+    
+    
+}
+.container_newsletter .news .lal{
+    width: 393px;
+
+}
+.container_newsletter .news1 .ppp{
+    background: url(Images/Rectangle\ 8.png);
+position: relative;
+
+}
+.container_newsletter .news1 .cccc{
+    width: 324px;
+    background: #FF5400;
+    border: 8px;
+    text-align: center;
+    position: absolute;
+   
+    
+}
+.container_newsletter .news1 .cccc p{
+    font-size:24px ;
+    font-weight: 900;
+    font-family:"Mulish", sans-serif ;
+    color:#131318 ;
+    line-height: 0;
+    padding-top: 20px;
+}
+.container_newsletter .news1 .cccc h5{
+    font-size:32px ;
+    font-weight: 900;
+    font-family:"Mulish", sans-serif ;
+    color:#131318 ;
+    line-height: 0;
+    padding-bottom: 25px;
+    
+}
 
 
 
-/* ---------------common css end -----------*/
-/* -----------------common css ------------*/
+/* ---------------Newsletter css end -----------*/
+/* -----------------footer css ------------*/
+
+#tsa_travel{
+    background: rgba(19, 19, 24, 0.05);
+}
+.container_travel{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.jorina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 110px;
+}
+.container_travel p{
+    font-size: 16px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    color: #131318aa;
+}
+.container_travel .icon{
+    display: flex;
+    gap: 10px;
+    width: 25px;
+    margin-left: 445px;
+
+}
+.container_travel p{
+    padding-bottom: 110px;
+}
 
 
 
-/* ---------------common css end -----------*/
-/* -----------------common css ------------*/
+
+/* ---------------footer css end -----------*/
+
+/* ===========================recponsive part============== */
+@media screen and(max-width:600px) {
+    .cintainer{
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    
 
 
 
-/* ---------------common css end -----------*/
 
+
+
+    .grid_item_container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+    .grid_item{
+        grid-column: 1 / span 1;
+    }
+       
+    
+
+}
+
+/* =======================recponsive part end============== */
